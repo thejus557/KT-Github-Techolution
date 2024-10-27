@@ -53,6 +53,36 @@ const router = createRouter({
       path: '/basics-component',
       component: () => import('../components/BasicsComponent.vue'),
     },
+    {
+      name: 'slots',
+      path: '/slots',
+      component: () => import('../components/SlotsComponent.vue'),
+    },
+    {
+      name: 'slots',
+      path: '/slots',
+      component: () => import('../components/SlotsComponent.vue'),
+    },
+    {
+      name: 'prop-drilling',
+      path: '/prop-drilling',
+      component: () => import('../components/PropDrillingComponent.vue'),
+    },
+    {
+      name: 'composable',
+      path: '/composable',
+      component: () => import('../components/ComposableComponent.vue'),
+    },
+    {
+      name: 'custom-directive',
+      path: '/custom-directive',
+      component: () => import('../components/CustomDirectiveComponent.vue'),
+    },
+    {
+      name: 'custom-plugin',
+      path: '/custom-plugin',
+      component: () => import('../components/CustomPlugin.vue'),
+    },
   ],
 })
 

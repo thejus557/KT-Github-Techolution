@@ -19,6 +19,23 @@ import { RouterLink, RouterView } from 'vue-router'
         <li>
           <RouterLink to="/basics-component">Basics of Components</RouterLink>
         </li>
+        <li>
+          <RouterLink to="/slots">Slots</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/prop-drilling"
+            >Prop drilling with prodive/inject</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink to="/composable">Composable/custom hooks</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/custom-directive">Custom Directive</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/custom-plugin">Custom Plugin</RouterLink>
+        </li>
       </ul>
     </nav>
   </header>
@@ -35,14 +52,16 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 nav {
   background-color: dodgerblue;
-  height: 64px;
+  min-height: 64px;
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 nav ul {
   list-style-type: none;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -50,8 +69,15 @@ nav ul li a {
   color: white;
 }
 
+nav ul li a::after {
+  content: '|';
+  padding-left: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
 .router-container {
-  height: calc(100vh - 64px);
+  /* height: calc(100vh - 64px); */
   background-color: whitesmoke;
 }
 </style>

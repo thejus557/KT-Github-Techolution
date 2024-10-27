@@ -5,3 +5,8 @@ body {
 .container {
   margin: 1rem;
 }
+
+.bordered-container {
+  margin: 1rem;
+  border: 2px dashed #333;
+}
